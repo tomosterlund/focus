@@ -17,8 +17,16 @@ const messageSchema = new Schema ({
     authorImageUrl: {
         type: String,
         required: true
+    },
+    groupId: {
+        type: String,
+        required: true
+    },
+    date: {
+        type: Date,
+        default: Date.now
     }
-});
+}, { timestamps: true });
 
 const messageModel = mongoose.model('Message', messageSchema);
 

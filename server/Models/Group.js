@@ -10,6 +10,10 @@ const groupSchema = new Schema({
         type: String,
         required: true
     },
+    imageUrl: {
+        type: String,
+        required: true
+    },
     members: {
         type: Array,
         required: true
@@ -29,6 +33,10 @@ const groupSchema = new Schema({
     eventIds: {
         type: Array,
         required: false
+    },
+    joinCode: {
+        type: String,
+        required: true
     },
     creationDate: {
         type: Date,
