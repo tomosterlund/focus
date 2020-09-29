@@ -1,0 +1,33 @@
+.GroupSummary {
+    width: 100%;
+    min-width: 200px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin: 16px 0 16px 0;
+    cursor: pointer;
+    .GroupImage {
+        height: 120px;
+        width: 100%;
+        background-size: cover;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    .TextBox {
+        width: 100%;
+        margin: 8px 0;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+            display: flex;
+            align-items: center;
+            padding: 0 8px;
+            margin: 0;
+        }
+    }
+}

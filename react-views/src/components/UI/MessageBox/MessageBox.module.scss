@@ -1,0 +1,21 @@
+.MessageBox {
+    width: 300px;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 8px;
+    position: absolute;
+    top: 32px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    transition: all 0.27s;
+    transition-timing-function: ease-out;
+}
+
+.Show {
+    opacity: 1;
+}
+
+.Hide {
+    opacity: 0;
+}

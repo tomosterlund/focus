@@ -1,0 +1,81 @@
+$blue: #05668d;
+$blueOpac: #c0dae4;
+$lighten1: #028090;
+$lighten2: #00a896;
+$lighten3: #02c39a;
+$snow: #f0f3bd;
+
+.SideDrawer {
+    z-index: 500;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    transition: all 0.2s ease-out;
+    height: 100%;
+    width: 77%;
+    max-width: 400px;
+    display: flex;
+    flex-flow: column;
+    padding: 16px;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            font-size: 20px;
+            width: auto;
+            padding: 12px;
+            a {
+                display: flex;
+                align-items: center;
+                padding: 0;
+                text-decoration: none;
+                color: inherit;
+                width: 100%;
+                height: 100%;
+                p {
+                    padding: 0;
+                    margin: 0 0 0 16px;
+                }
+            }
+            &:hover {
+                background-color: $lighten1;
+                color: white;
+                cursor: pointer;
+            }
+        }
+        .UserImage {
+            background-size: cover;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+        .UserInfoText {
+            margin: 0 0 0 8px;
+            p {
+                margin: 0;
+                display: flex;
+                align-items: center;
+            }
+            .SignedInAs {
+                color: gray;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.Show {
+    transform: translateX(0);
+}
+
+.Hide {
+    transform: translateX(-100%);
+}
+
+.Close {
+    margin: 0px 0px 16px 12px;
+    cursor: pointer;
+}

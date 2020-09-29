@@ -1,0 +1,66 @@
+$blue: #05668d;
+$blueOpac: #c0dae4;
+$lighten1: #028090;
+$lighten2: #00a896;
+$lighten3: #02c39a;
+$snow: #f0f3bd;
+
+.NavContainer {
+    margin: 16px 0 0 0;
+    width: 92%;
+    min-height: 150px;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 3px gray;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    .GroupRoomNavigation {
+        width: 50%;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 0 16px;
+            li {
+                padding: 8px;
+                font-size: 18px;
+                cursor: pointer;
+                &:hover {
+                    color: $blue;
+                }
+                
+            }
+            li.active {
+                background-color: $blue;
+                border-radius: 5px;
+                color: white;
+            }
+        }
+    }
+    .GroupInfo {
+        width: 50%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        img {
+            margin: 8px auto;
+            object-fit: cover;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 8px double $lighten1;
+        }
+        p {
+            margin: 8px auto;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (min-width: 500px) {
+    .NavContainer {
+        width: 80%;
+        max-width: 450px;
+    }
+}

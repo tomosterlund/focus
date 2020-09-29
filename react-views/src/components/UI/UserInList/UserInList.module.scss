@@ -1,0 +1,23 @@
+.UserInList {
+    width: 100%;
+    padding: 8px;
+    margin: 0 0 8px 0;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .UserImage {
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        background-size: cover;
+
+    }
+    .TextBox {
+        padding: 16px;
+        h3 {
+            font-size: 14px;
+            margin: 0;
+        }
+    }
+}

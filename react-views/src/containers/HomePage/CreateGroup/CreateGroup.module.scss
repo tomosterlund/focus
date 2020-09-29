@@ -1,0 +1,29 @@
+.CreateGroup {
+    position: absolute;
+    top:66px;
+    text-align: center;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.90);
+    border-radius: 8px;
+    width: 92%;
+    max-width: 400px;
+    box-sizing: border-box;
+    padding: 8px;
+    transform: all 0.3s ease-out;
+    .GoBack {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        color: gray;
+        font-size: 14px;
+    }
+    h1 {
+        margin-top: 32px;
+    }
+    .ButtonText {
+        margin: 0 0 0 8px;
+    }
+}

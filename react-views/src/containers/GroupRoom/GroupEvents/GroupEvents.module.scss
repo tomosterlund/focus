@@ -1,0 +1,29 @@
+.TimeStamp {
+    padding: 0;
+    margin: 0 0 10px 0;
+    color: gray;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    .InfoBox {
+        margin: 0 0 0 8px;
+    }
+}
+
+.AddIconContainer {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+}
+
+.SettingsCog {
+    margin: 0 0 0 8px;
+    &:hover {
+        color: #05668d;
+    }
+}
+
+.TextBox {
+    white-space: pre-wrap;
+}

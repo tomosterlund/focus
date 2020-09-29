@@ -1,0 +1,30 @@
+.AddEvent {
+    position: relative;
+    .GoBack {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        color: gray;
+        font-size: 14px;
+    }
+    .InputField {
+        width: 90%;
+        margin: 16px 0 0 0;
+    }
+
+    h2 {
+        margin: 16px 0 0 0;
+    }
+    .DateField {
+        color: transparent;
+        margin: 16px 0 0 0;
+        font-family: 'Open Sans', sans-serif !important;
+        &::placeholder {
+            color: white;
+            font-family: inherit !important;
+        }
+    }
+}

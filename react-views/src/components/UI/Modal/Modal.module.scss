@@ -1,0 +1,13 @@
+.AppModal {
+    position: fixed;
+    top: 30%;
+    left: auto;
+    width: 250px;
+    height: fit-content;
+    background-color: white;
+    z-index: 500;
+    border-radius: 8px;
+    box-shadow: 4px 8px 8px rgb(0, 0, 0);
+    text-align: center;
+    padding: 16px;
+}

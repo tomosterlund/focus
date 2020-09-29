@@ -1,0 +1,38 @@
+.HomePageImage {
+    height: 95vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    opacity: 0.95;
+}
+
+.CenterSpan {
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    max-width: 92%;
+    box-sizing: border-box;
+    padding: 8px;
+    h2 {
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+        text-shadow: 4px 3px black;
+    }
+}
+
+@media (min-width: 500px) {
+    .CenterSpan {
+        min-height: 200px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 16px;
+    }
+}

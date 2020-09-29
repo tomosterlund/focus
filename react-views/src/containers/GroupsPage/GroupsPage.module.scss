@@ -1,0 +1,17 @@
+.GroupsPage {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 340px;
+    margin: 8px 0 0 0;
+    h1 {
+        font-size: 25px;
+        margin: 8px 0 8px 0;
+        // text-align: center;
+        color: black;
+        text-transform: uppercase;
+    }
+    h2 {
+        text-align: center;
+    }
+}

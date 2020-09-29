@@ -1,0 +1,48 @@
+$blue: #05668d;
+$blueOpac: #c0dae4;
+$lighten1: #028090;
+$lighten2: #00a896;
+$lighten3: #02c39a;
+$snow: #f0f3bd;
+
+.Header {
+    box-shadow: 0px 1px 3px gray;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $blue;
+    color: white;
+    .LeftContainer {
+        display: flex;
+        align-items: center;
+        .HeaderInput {
+            padding: 8px;
+            border: 0;
+            border-radius: 5px;
+            margin: 0 0 0 20px;
+            outline: none;
+            background-color: $blueOpac;
+            &::placeholder {
+                font-family: 'Open Sans';
+            }
+        }
+        .MenuToggle {
+            margin-left: 10px;
+            font-size: 35px;
+            cursor: pointer;
+        }
+    }   
+    .RightContainer {
+        margin: 0 20px 0 0;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.Logo {
+    font-weight: 300;
+    font-size: 29px;
+    margin: 0 0 0 10px;
+    font-family: 'Righteous';
+}
