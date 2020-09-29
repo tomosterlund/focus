@@ -1,0 +1,1 @@
+{ "AWS_SDK_LOAD_CONFIG": "1", "accessKeyId": "YOUR PERSONAL KEY ID", "secretAccessKey": "YOUR PERSONAL ACCESS KEY", "region": "YOUR CHOSEN AWS REGION" }
