@@ -105,4 +105,50 @@ router.post('/join', async (req, res) => {
     }
 })
 
+router.post('/add-admin', async (req, res) => {
+    const reqBody = req.body;
+    console.log(reqBody);
+    try {
+        const group = await Group.findById(reqBody.groupId);
+        group.admins.push(reqBody.userId);
+        const updatedGroup = await group.save();
+        res.json({ loadedGroup: updatedGroup });
+    } catch (error) {
+        console.log(error);
+    }
+});
+
+router.post('/remove-admin', async (req, res) => {
+    const reqBody = req.body;
+    try {
+        const group = await Group.findById(reqBody.groupId);
+        const userIndexofAdmins = group.admins.indexOf(req.body.userId);
+        group.admins.splice(userIndexofAdmins, 1);
+        const updatedGroup = await group.save();
+        res.json({ loadedGroup: updatedGroup });
+    } catch (error) {
+        console.log(error);
+    }
+});
+
+router.post('/remove-member', async ( req, res) => {
+    const reqBody = req.body;
+    try {
+        const group = await Group.findById(reqBody.groupId);
+        const userIndexofUser = group.members.indexOf(req.body.userId);
+        group.members.splice(userIndexofUser, 1);
+        const updatedGroup = await group.save();
+        const removedUser = await User.findById(reqBody.userId);
+        const indexOfGroup = removedUser.groups.indexOf(reqBody.groupId);
+        removedUser.groups.splice(indexOfGroup, 1);
+        removedUser.save();
+        const groupMembers = await User
+            .find({ _id: [...updatedGroup.members] })
+            .lean();
+        res.json({ loadedGroup: updatedGroup, groupMembers: groupMembers });
+    } catch (error) {
+        console.log(error);
+    }
+})
+
 module.exports = router;
